@@ -39,16 +39,20 @@ def monte_carlo_thread(n:int=DEFAULT_TOSSING_AMOUNT, m:int=4):
 
 
 if __name__ == "__main__":
-    start_time = time.time()
+    if len(sys.argv) < 2:
+        print("Please provide a parameter")
+        sys.exit(1)
 
-    if len(sys.argv) >= 2:
-        if sys.argv[1] == "normal":
-            print(monte_carlo_normal())
-        elif sys.argv[1] == "multiprocess":
-            print(monte_carlo_multiprocess())
-        elif sys.argv[1] == "thread":
-            print(monte_carlo_thread())
+    start_time = time.time()
+    
+    if sys.argv[1] == "normal":
+        print(monte_carlo_normal())
+    elif sys.argv[1] == "multiprocess":
+        print(monte_carlo_multiprocess())
+    elif sys.argv[1] == "thread":
+        print(monte_carlo_thread())
     else:
         print("Give a valid parameter in [normal|multiprocess|thread]")
+        sys.exit(1)
 
     print("Executed time: {}s".format(time.time() - start_time))
