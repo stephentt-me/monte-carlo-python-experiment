@@ -1,13 +1,13 @@
 # Monte Carlo and Python benchmark
 
-This repo is an experiment for benchmark about GIL, multiprocess vs thread, CPython vs PyPy.
+This repo is an experiment about GIL, multiprocess vs thread, CPython vs PyPy.
 
 ## Method
 
 By trying to calculate Pi number by using Monte Carlo method. Implemented with:
 * Multiprocessing
 * Threading
-* 'Normal'
+* "Normal"
 
 And compare the result (time executed).
 
@@ -24,9 +24,9 @@ Clone this repo.
 
 ## Sample Result
 
-_in my machine (I know two are not the same version, I will do it again when have time)_
+__I non-scientific experiment I ran on my computer. And yes, I know 2 version of CPython and PyPy is not the same. I will do it agan when have time.__
 
-CPython:
+CPython
 
 ```
 ➜ python monte_carlo.py normal 
