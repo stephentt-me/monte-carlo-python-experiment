@@ -24,7 +24,7 @@ Clone this repo.
 
 ## Sample Result
 
-__I non-scientific experiment I ran on my computer. And yes, I know 2 version of CPython and PyPy is not the same. I will do it agan when have time.__
+_A non-scientific experiment I ran on my computer. And yes, I know 2 version of CPython and PyPy is not the same. I will do it agan when have time._
 
 CPython
 
